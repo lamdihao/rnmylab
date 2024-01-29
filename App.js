@@ -8,20 +8,31 @@ import Main from './src/screens/auth/main'
 import Signup from './src/screens/auth/signup';
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
+import Lab5 from './src/screens/lab5';
+import Flex from './src/screens/flex';
+import Lab6 from './src/screens/Lab6';
 
 const Stack = createNativeStackNavigator()
 const App = () => {
   return(
-    <NavigationContainer>
-    <Stack.Navigator>
-    <Stack.Screen name='Home' component={Splash}/>
-      <Stack.Screen name='Signup' component={Signup}/>
-      <Stack.Screen name='Login' component={Login}/>
-      <Stack.Screen name='Main' component={Main}/>
-    </Stack.Navigator>
-    </NavigationContainer>
+    // <NavigationContainer>
+    // <Stack.Navigator>
+    // <Stack.Screen name='Home' component={Splash}/>
+    //   <Stack.Screen name='Signup' component={Signup}/>
+    //   <Stack.Screen name='Login' component={Login}/>
+    //   <Stack.Screen name='Main' component={Main}/>
+    // </Stack.Navigator>
+    // </NavigationContainer>
     // <Lab3></Lab3>
-
+    // <Lab4></Lab4>
+    // <Flex></Flex>
+    // <NavigationContainer>
+    // <Stack.Navigator>
+    // <Stack.Screen name='Lab5' component={Lab5}/>
+    //   <Stack.Screen name='Flex' component={Flex}/>
+    // </Stack.Navigator>
+    // </NavigationContainer>
+    <Lab6></Lab6>
   );
 };
 
