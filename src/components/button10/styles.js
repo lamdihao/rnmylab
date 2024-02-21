@@ -5,6 +5,7 @@ export const styles = StyleSheet.create({
       flex: 1,
       justifyContent: 'center',
       alignItems: 'center',
+      
     },
     loginButton: {
       backgroundColor: 'white',
@@ -14,6 +15,7 @@ export const styles = StyleSheet.create({
       width: 120,
       marginTop: 1,
       borderRadius: 8,
+
     },
     buttonText: {
       color: 'blue',

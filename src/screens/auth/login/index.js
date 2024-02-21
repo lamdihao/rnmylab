@@ -5,6 +5,9 @@ import Input from "../../../components/input";
 import Button5 from "../../../components/button5";
 import Button6 from "../../../components/button6";
 import BouncyCheckbox from "react-native-bouncy-checkbox";
+import Signup from './../signup/index';
+
+
 
 
 const Login = ({navigation}) =>{
@@ -29,7 +32,6 @@ const Login = ({navigation}) =>{
           textStyle={{ fontFamily: "JosefinSans-Regular" }}
           onPress={(isChecked: boolean) => {}}
           textStyle={{ 
-          fontFamily: "JosefinSans-Regular",
           fontSize: 12, 
           textDecorationLine: 'none',
           marginRight: 50,
@@ -39,7 +41,7 @@ const Login = ({navigation}) =>{
       </View>
        <Button5 onPress={() => navigation.navigate('Main')}></Button5>
        <Text style={[styles.title, styles.innerTitleOr]}>OR</Text>
-       <Button6 onPress={() => navigation.navigate('Main')}></Button6>
+       <Button6 onPress={() => navigation.navigate('Signup')}></Button6>
        <View style={styles.signUpContainer}>
         <Text style={[styles.title, styles.innerTitle1, styles.dontHaveAccountText]}>Don't have an account? </Text>
         <TouchableOpacity onPress={handleSignUpPress}>

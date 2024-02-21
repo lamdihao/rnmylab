@@ -14,7 +14,7 @@ const Signup = ({navigation}) =>{
        <Text style={[styles.title, styles.innerTitle]}>Sign up for the Chunky app</Text>
        <Input placeholder="Email/phone number" />
        <Input placeholder="Password" />
-       <Input placeholder="Confirm password" />
+       <Input isPassword label="Password" placeholder="Confirm password" />
        <View style={styles.row}>
        <BouncyCheckbox
           size={25}
@@ -24,9 +24,7 @@ const Signup = ({navigation}) =>{
            Chunky app Terms of Service and Privacy Policy"
           iconStyle={{ borderColor: "red" }}
           innerIconStyle={{ borderWidth: 2 }}
-          textStyle={{ fontFamily: "JosefinSans-Regular" }}
           textStyle={{ 
-          fontFamily: "JosefinSans-Regular",
           fontSize: 12, 
           textDecorationLine: 'none',
           marginRight: 50,

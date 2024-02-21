@@ -5,12 +5,20 @@ import Lab4 from './src/screens/lab4';
 import Splash from './src/screens/auth/splash';
 import Login from './src/screens/auth/login';
 import Main from './src/screens/auth/main'
+
 import Signup from './src/screens/auth/signup';
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import Lab5 from './src/screens/lab5';
 import Flex from './src/screens/flex';
 import Lab6 from './src/screens/Lab6';
+import Lab7 from './src/screens/Lab7';
+import Menu from './src/screens/Lab7/TopMenu';
+import Header from './src/components/Header';
+import Crud from './src/screens/lab8/CRUD';
+import Home from './src/screens/app/Home';
+import MyTabs from './src/screens/Lab9/BottomTab';
+
 
 const Stack = createNativeStackNavigator()
 const App = () => {
@@ -32,7 +40,14 @@ const App = () => {
     //   <Stack.Screen name='Flex' component={Flex}/>
     // </Stack.Navigator>
     // </NavigationContainer>
-    <Lab6></Lab6>
+    // <Lab6></Lab6>
+    // <Lab7></Lab7>
+    // <Menu></Menu>
+  //  <Header></Header>
+  <Crud></Crud>
+  // <Home></Home>
+  // <MyTabs></MyTabs>
+ 
   );
 };
 

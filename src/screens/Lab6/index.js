@@ -13,7 +13,10 @@ function HomeScreen({navigation}){
         <View style={{flex: 1, alightItems:'center', justifyContent:'center'}}>
             <Text style={styles.text1}>Chào bạn đây là màn hình chính</Text>
             <Input placeholder="Nhập tên của bạn"></Input>
-            <Button onPress={() => navigation.navigate('Article')} title="Đi tới màng hình chi tiết"></Button>          
+            <View style={{alightItems:'center', justifyContent:'center',marginLeft: 50, marginRight: 50}}>
+            <Button onPress={() => navigation.navigate('Article')} title="Đi tới màng hình chi tiết"></Button> 
+            </View>
+                     
         </View>
     );
 };
@@ -49,6 +52,7 @@ function Help({navigation}){
 const Drawer = createDrawerNavigator();
 const Lab6 = () => {
     return (
+        
     <NavigationContainer>
         <Drawer.Navigator 
             screenOptions={{drawerActiveBackgroundColor:'#FFCC00'}}
