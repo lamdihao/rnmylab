@@ -1,22 +1,15 @@
-import { StyleSheet } from "react-native-web";
+/* eslint-disable prettier/prettier */
+import {StyleSheet} from 'react-native';
 
 export const styles = StyleSheet.create({
-    
-    img: {
-        paddingTop: 500,
-        width: 200,
-        height: 400,
-        marginLeft: 100,
-    },
-    title: {
-        fontSize: 25,
-        fontWeight: 'bold',
-        padding: 10,
-        textAlign:'center',
-        
-    },
-    innerTitle: {
-        fontSize: 15,
-        color:'#2D4990',
-    }
+  container: {
+    padding: 1,
+  },
+  list: {
+    paddingVertical: 3,
+    marginTop: 3,
+  },
+  productsList: {
+    paddingHorizontal: 16,
+  },
 });

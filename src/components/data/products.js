@@ -11,7 +11,7 @@ export const products = [
       id: 2,
       title: 'Wood Mini Table',
       image:
-        'https://ii1.pepperfry.com/media/catalog/product/f/o/800x880/foldable-table-in-natural-colour-by-clasicraft-foldable-table-in-natural-colour-by-clasicraft-ahmtub.jpg',
+        'https://ghevanphong247.com/wp-content/uploads/2020/06/B%C3%A0n-%C4%83n-m%E1%BA%B7t-k%C3%ADnh-ch%C3%A2n-m%E1%BA%A1-v%C3%A0ng-KG-T148-3.jpg',
       category: 2,
       price: '$ 25.00',
     },
@@ -35,7 +35,7 @@ export const products = [
       id: 5,
       title: 'Velvet Sofa',
       image:
-        'https://www.housingunits.co.uk/media/catalog/product/cache/60968cec045f20fb06ab5f7720001507/5/5/555685b1a8eecf2133f18451526a4ede.jpg',
+        'https://futonland.com/common/images/products/large/F6975.jpg',
       images: [
         'https://collinsandhayes-cdn-1.s3.eu-west-2.amazonaws.com/wp-content/uploads/2022/02/14101256/V7A1199-800x800.jpg',
         'https://www.housingunits.co.uk/media/catalog/product/cache/60968cec045f20fb06ab5f7720001507/5/5/555685b1a8eecf2133f18451526a4ede.jpg',
@@ -51,5 +51,13 @@ export const products = [
         'https://togiprod.s3.ap-southeast-1.amazonaws.com/originals/ban-lam-viec-chan-chu-x-phong-cach-don-gian-bs005-2-snx1i65ovtfadko.webp',
       category: 4,
       price: '$ 1000.00',
+    },
+    {
+      id: 7,
+      title: 'Table Gaming',
+      image:
+        'https://cf.shopee.vn/file/7d5a28ca72c2b9207136f7e631e0d830',
+      category: 5,
+      price: '$ 2900.00',
     },
   ];

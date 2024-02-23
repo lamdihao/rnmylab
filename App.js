@@ -18,19 +18,20 @@ import Header from './src/components/Header';
 import Crud from './src/screens/lab8/CRUD';
 import Home from './src/screens/app/Home';
 import MyTabs from './src/screens/Lab9/BottomTab';
+import BottomTabs from './src/screens/Lab7Demo';
 
 
 const Stack = createNativeStackNavigator()
 const App = () => {
   return(
-    // <NavigationContainer>
-    // <Stack.Navigator>
-    // <Stack.Screen name='Home' component={Splash}/>
-    //   <Stack.Screen name='Signup' component={Signup}/>
-    //   <Stack.Screen name='Login' component={Login}/>
-    //   <Stack.Screen name='Main' component={Main}/>
-    // </Stack.Navigator>
-    // </NavigationContainer>
+    <NavigationContainer>
+    <Stack.Navigator>
+    <Stack.Screen name='Home' component={Splash}/>
+      <Stack.Screen name='Signup' component={Signup}/>
+      <Stack.Screen name='Login' component={Login}/>
+      <Stack.Screen name='Main' component={Main}/>
+    </Stack.Navigator>
+    </NavigationContainer>
     // <Lab3></Lab3>
     // <Lab4></Lab4>
     // <Flex></Flex>
@@ -44,9 +45,12 @@ const App = () => {
     // <Lab7></Lab7>
     // <Menu></Menu>
   //  <Header></Header>
-  <Crud></Crud>
+  // <Crud></Crud>
   // <Home></Home>
-  // <MyTabs></MyTabs>
+  // <NavigationContainer>
+  //     <BottomTabs />
+  // </NavigationContainer>
+
  
   );
 };

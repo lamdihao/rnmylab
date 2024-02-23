@@ -7,7 +7,7 @@ const AddUser = () => {
     const [birthday, setBirthday] = useState('');
 
     const saveUser = async () => {
-        const url = 'https://65d40119522627d50109bcef.mockapi.io/users';
+        const url = 'https://65d40119522627d50109bcef.mockapi.io/user';
         try {
             let response = await fetch(url, {
                 method: 'POST',
@@ -17,13 +17,10 @@ const AddUser = () => {
             let result = await response.json();
             if (response.ok) {
                 console.warn("User added successfully");
-                // Replace console.warn with an appropriate notification if needed
             } else {
-                // Handle errors from the server, such as notifying the user
                 console.warn("Failed to add user");
             }
         } catch (error) {
-            // Handle errors when the request cannot be sent
             console.error("Error adding user:", error);
         }
     };

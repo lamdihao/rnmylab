@@ -15,7 +15,7 @@ const ListUser = ({ navigation }) => {
   const [selectedUser, setSelectedUser] = useState(undefined);
 
   const getAPI = async () => {
-    const url = "https://65d40119522627d50109bcef.mockapi.io/users";
+    const url = "https://65d40119522627d50109bcef.mockapi.io/user";
     try {
       let response = await fetch(url);
       let result = await response.json();
@@ -29,12 +29,11 @@ const ListUser = ({ navigation }) => {
   };
 
   const handleDelete = async (id) => {
-    const url = "https://65d40119522627d50109bcef.mockapi.io/users";
+    const url = 'https://65d40119522627d50109bcef.mockapi.io/user';
     try {
       let response = await fetch(`${url}/${id}`, {
         method: "DELETE",
       });
-      let result = await response.json();
       if (response.ok) {
         getAPI();
       } else {
@@ -117,7 +116,7 @@ const UpdateModel = (props) => {
   }, [props.selectedUser]);
 
   const updateUser = async () => {
-    const url = "https://65d40119522627d50109bcef.mockapi.io/users";
+    const url = 'https://65d40119522627d50109bcef.mockapi.io/user';
     const id = props.selectedUser.id;
     try {
       let result = await fetch(`${url}/${id}`, {

@@ -5,7 +5,6 @@ import Input from "../../../components/input";
 import Button5 from "../../../components/button5";
 import Button6 from "../../../components/button6";
 import BouncyCheckbox from "react-native-bouncy-checkbox";
-import Signup from './../signup/index';
 
 
 
