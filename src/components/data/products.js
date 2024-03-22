@@ -1,41 +1,73 @@
 export const products = [
     {
       id: 1,
-      title: 'Loft Style Chair',
+      title: 'Dog',
       image:
-        'https://grandrapidschair.com/wp-content/uploads/2016/01/250_Brady_Graphite_Honey-1.jpg',
+        'https://img6.thuthuatphanmem.vn/uploads/2022/01/27/anh-thu-cung_014116133.jpg',
       category: 1,
       price: '$ 20.00',
     },
     {
-      id: 2,
-      title: 'Wood Mini Table',
+      id: 13,
+      title: 'Dog',
       image:
-        'https://ghevanphong247.com/wp-content/uploads/2020/06/B%C3%A0n-%C4%83n-m%E1%BA%B7t-k%C3%ADnh-ch%C3%A2n-m%E1%BA%A1-v%C3%A0ng-KG-T148-3.jpg',
+        'https://vanchuyenchomeo.com/wp-content/uploads/2021/10/quan-ao-cho-cho-meo.jpg',
+      category: 1,
+      price: '$ 50.00',
+    },
+    {
+      id: 12,
+      title: 'Dog',
+      image:
+        'http://anhdepbonphuong.com/wp-content/uploads/2015/12/11-buc-hinh-nen-thu-cung-dang-yeu-2.jpg',
+      category: 1,
+      price: '$ 100.00',
+    },
+    {
+      id: 11,
+      title: 'Dog',
+      image:
+        'https://www.biopharmachemie.com/uploads/images/news/ky-thuat/THU%20CUNG/image-3.jpg',
+      category: 1,
+      price: '$ 75.00',
+    },
+    {
+      id: 10,
+      title: 'Dog',
+      image:
+        'http://anhdepbonphuong.com/wp-content/uploads/2015/12/11-buc-hinh-nen-thu-cung-dang-yeu-9.jpg',
+      category: 1,
+      price: '$ 75.00',
+    },
+    {
+      id: 2,
+      title: 'Cat',
+      image:
+        'https://khoinguonsangtao.vn/wp-content/uploads/2022/11/hinh-anh-thu-cung-meo-ngau.jpg',
       category: 2,
       price: '$ 25.00',
     },
     {
       id: 3,
-      title: 'Luxe Yellow Armchair',
+      title: 'Rabbit',
       image:
-        'https://www.woods-furniture.co.uk/images/products/standard/7706_8118.jpg',
+        'https://png.pngtree.com/background/20211216/original/pngtree-cute-pet-white-rabbit-outdoor-capture-photography-map-during-the-day-picture-image_1523388.jpg',
       category: 3,
       price: '$ 45.00',
     },
     {
       id: 4,
-      title: 'Cozy Armchair',
+      title: 'Rabbit',
       image:
-        'https://cdn.shopify.com/s/files/1/0079/2539/9616/products/myakka-chairs-jalkamal-block-print-footstool-28730051264703_2000x.jpg?v=1629217511',
+        'https://img3.thuthuatphanmem.vn/uploads/2019/07/04/hinh-anh-con-tho-dang-yeu_114758299.jpg',
       category: 3,
       price: '$ 80.00',
     },
     {
       id: 5,
-      title: 'Velvet Sofa',
+      title: 'Bird',
       image:
-        'https://futonland.com/common/images/products/large/F6975.jpg',
+        'http://2sao.vietnamnetjsc.vn/images/2017/06/25/08/46/loai-chim-90.JPG',
       images: [
         'https://collinsandhayes-cdn-1.s3.eu-west-2.amazonaws.com/wp-content/uploads/2022/02/14101256/V7A1199-800x800.jpg',
         'https://www.housingunits.co.uk/media/catalog/product/cache/60968cec045f20fb06ab5f7720001507/5/5/555685b1a8eecf2133f18451526a4ede.jpg',
@@ -46,18 +78,66 @@ export const products = [
     },
     {
       id: 6,
-      title: 'Table Gaming',
+      title: 'Cat',
       image:
-        'https://togiprod.s3.ap-southeast-1.amazonaws.com/originals/ban-lam-viec-chan-chu-x-phong-cach-don-gian-bs005-2-snx1i65ovtfadko.webp',
-      category: 4,
-      price: '$ 1000.00',
+        'https://thepet.vn/wp-content/uploads/2018/05/cham-giu-meo1-e1527325105101-1.jpg',
+      category: 2,
+      price: '$ 100.00',
     },
     {
-      id: 7,
-      title: 'Table Gaming',
+      id: 9,
+      title: 'Cat',
       image:
-        'https://cf.shopee.vn/file/7d5a28ca72c2b9207136f7e631e0d830',
+        'https://toplist.vn/images/800px/pet-mart-cua-hang-thu-cung-804691.jpg',
+      category: 2,
+      price: '$ 29.00',
+    },
+    {
+      id: 8,
+      title: 'Bird',
+      image:
+        'https://wall.vn/wp-content/uploads/2019/11/hinh-anh-chim-vet-3.jpg',
+      category: 4,
+      price: '$ 120.00',
+    },
+    {
+      id: 8,
+      title: 'Mouse',
+      image:
+        'https://image-us.eva.vn/upload/4-2020/images/2020-10-29/image6-1603965308-52-width600height400.jpg',
       category: 5,
-      price: '$ 2900.00',
+      price: '$ 120.00',
+    },
+    {
+      id: 81,
+      title: 'Mouse',
+      image:
+        'https://demoda.vn/wp-content/uploads/2022/02/anh-chuot-hamster-mac-do-xanh.jpg',
+      category: 5,
+      price: '$ 120.00',
+    },
+    {
+      id: 82,
+      title: 'Mouse',
+      image:
+        'https://sudospaces.com/happyvet-com-vn/2020/04/chuot-hamster-an-gi-12.jpg',
+      category: 5,
+      price: '$ 120.00',
+    },
+    {
+      id: 91,
+      title: 'Fish',
+      image:
+        'https://vatnuoi.vn/wp-content/uploads/2021/05/ca-betta-rong-1-1536x1235.jpg?v=1621879244',
+      category: 6,
+      price: '$ 19.00',
+    },
+    {
+      id: 92,
+      title: 'Fish',
+      image:
+        'https://anhdephd.vn/wp-content/uploads/2022/05/anh-ca-canh.jpg',
+      category: 6,
+      price: '$ 12.00',
     },
   ];

@@ -3,15 +3,18 @@ import React, { useEffect, useState } from "react";
 import { styles } from '../../app/Home/styles'
 import { FlatList, SafeAreaView, ScrollView, Text, TouchableOpacity, View, TextInput, Image } from "react-native"; // Add TextInput and Image imports
 import Header from "../../../components/Header";
+import { useNavigation } from '@react-navigation/native';
 import { categories } from "../../../components/data/categories";
 import CategoryBox from "../../../components/CategoryBox";
 import ProductHomeItem from "../../../components/ProductHomeItem";
 import { products as initialProducts } from "../../../components/data/products";
+import ShoppingIcon from '../../../components/shop';
 
 const Home = () => {
-  const [keyword, setKeyword] = useState("");
-  const [filteredProducts, setFilteredProducts] = useState(initialProducts);
-  const [selectedCategory, setSelectedCategory] = useState();
+  const navigation = useNavigation();
+  const [keyword, setKeyword] = useState("");// luu tru
+  const [filteredProducts, setFilteredProducts] = useState(initialProducts);//giu danh sach
+  const [selectedCategory, setSelectedCategory] = useState();//theo doi
   const [isAddingProduct, setIsAddingProduct] = useState(false);
   const [newProduct, setNewProduct] = useState({ title: "", category: "", price: "", image: "" });
 
@@ -21,13 +24,13 @@ const Home = () => {
 
   const handleSaveProduct = () => {
     if (newProduct.id) {
-      // Edit existing product
+      
       const updatedProducts = filteredProducts.map((product) =>
         product.id === newProduct.id ? { ...newProduct } : product
       );
       setFilteredProducts(updatedProducts);
     } else {
-      // Add new product
+     
       const newProductId = generateUniqueId();
       const updatedProducts = [...filteredProducts, { id: newProductId, ...newProduct }];
       setFilteredProducts(updatedProducts);
@@ -51,7 +54,7 @@ const Home = () => {
   const generateUniqueId = () => {
     return '_' + Math.random().toString(36).substr(2, 9);
   };
-
+ // loc sp dua tren tu khoa da chon
   const filterProducts = (category, keyword) => {
     return initialProducts.filter((product) =>
       (!category || product?.category === category) &&
@@ -64,10 +67,17 @@ const Home = () => {
     setFilteredProducts(updatedProducts);
   }, [selectedCategory, keyword]);
 
-  const renderCategoryItem = ({ item }) => {
-    return <CategoryBox title={item?.title} image={item?.image}></CategoryBox>;
+  const renderCategoryItem = ({item, index}) => {
+    return (
+      <CategoryBox
+        onPress={() => setSelectedCategory(item?.id)}
+        isSelected={item?.id === selectedCategory}
+        isFirst={index === 0}
+        title={item?.title}
+        image={item?.image}
+      />
+    );
   };
-
   const renderProductItem = ({ item }) => {
     return (
       <View style={styles.productItem}>
@@ -79,9 +89,18 @@ const Home = () => {
           <TouchableOpacity onPress={() => handleDeleteProduct(item.id)}>
             <Text style={styles.deleteButton}>Delete</Text>
           </TouchableOpacity>
+          <ShoppingIcon onPress={() => handleShopProduct(item)} />
         </View>
       </View>
     );
+  };
+  const handleShopProduct = (product) => {
+    //chuyen thong tin dang tham so
+    navigation.navigate('ShoppingCart', {
+      productId: product.title,
+      productImage: product.image,
+      productPrice: product.price,
+    });
   };
 
   return (

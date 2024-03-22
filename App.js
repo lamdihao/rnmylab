@@ -17,19 +17,26 @@ import Menu from './src/screens/Lab7/TopMenu';
 import Header from './src/components/Header';
 import Crud from './src/screens/lab8/CRUD';
 import Home from './src/screens/app/Home';
-import MyTabs from './src/screens/Lab9/BottomTab';
+// import MyTabs from './src/screens/Lab9/BottomTab';
 import BottomTabs from './src/screens/Lab7Demo';
+import ShoppingCart from './src/screens/auth/ShopCart';
+import OrderInfo from './src/screens/auth/OrderInfo';
+// import MusicPlayer from './src/screens/Lab9/nghenhac';
+// import Nghenhac from './src/screens/Lab9/nghenhac';
 
 
 const Stack = createNativeStackNavigator()
 const App = () => {
   return(
+  //  <MusicPlayer />
     <NavigationContainer>
     <Stack.Navigator>
-    <Stack.Screen name='Home' component={Splash}/>
+      <Stack.Screen name='Home' component={Splash}/>
       <Stack.Screen name='Signup' component={Signup}/>
       <Stack.Screen name='Login' component={Login}/>
       <Stack.Screen name='Main' component={Main}/>
+      <Stack.Screen name='ShoppingCart' component={ShoppingCart} />
+      <Stack.Screen name="OrderInfo" component={OrderInfo} />
     </Stack.Navigator>
     </NavigationContainer>
     // <Lab3></Lab3>
